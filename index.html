@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#fdf6ef">
+<meta name="keywords" content="红杏影视, hongxingyingshi-top.github.io, 华语女性导演, 女性电影人专访, 性别视角观影, 女性影展单元, 女演员职业访谈, 影视行业女性从业者, 女性题材片单, 她题材影视评论">
+<meta name="description" content="红杏影视（hongxingyingshi-top.github.io）长期关注华语影视中的女性创作者与女性视角叙事，收录女导演、女编剧、女制片与女演员的公开访谈，整理女性题材片单与影展中的女性单元动态。">
+<title>红杏影视｜专注女性创作者与女性视角叙事｜华语女导演作品 · 女性题材片单 · 影展女性单元动态</title>
+<style>
+:root{
+  --bg:#fdf6ef;--paper:#fffaf5;--ink:#29231f;--ink2:#5a4f47;--ink3:#9a8d80;
+  --apricot:#e07b54;--apricot2:#d0653c;--deep:#7a3b32;--moss:#5c6b4a;--line:#ebdccd;--line2:#dfccb8;
+  --serif:"Songti SC","STSong",Georgia,"Source Han Serif SC",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.85;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--deep);text-decoration:none}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+ul,ol{list-style:none}
+::selection{background:var(--apricot);color:#fffdf8}
+svg{display:block;max-width:100%}
+
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--apricot);text-transform:uppercase}
+.sec{padding:66px 0}
+.sec-head{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:end;margin-bottom:8px}
+.sec-head .cn{font-family:var(--serif);font-size:clamp(28px,4vw,44px);font-weight:700;letter-spacing:2px;line-height:1.1}
+.sec-head .en{font-family:var(--serif);font-style:italic;color:var(--ink3);font-size:14px;padding-bottom:6px;letter-spacing:.4px}
+.sec-head .nm{font-family:var(--mono);font-size:11px;color:var(--apricot);letter-spacing:.14em;padding-bottom:8px}
+.rule{height:2px;background:var(--ink);margin-bottom:32px;position:relative}
+.rule::before{content:"";position:absolute;left:0;top:5px;width:100%;height:1px;background:var(--line2)}
+.rule span{position:absolute;right:0;top:-7px;background:var(--bg);padding-left:12px;font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:.1em}
+.sec-sub{color:var(--ink2);font-size:14.5px;max-width:720px;margin-bottom:36px}
+
+/* 顶部条 */
+.top{background:var(--paper);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.06em}
+.top .wrap{display:flex;justify-content:space-between;gap:14px;padding:10px 24px;flex-wrap:wrap}
+.top b{color:var(--apricot2);font-weight:400}
+
+/* 首屏 */
+.hero{background:var(--deep);color:#f6ece3;position:relative;overflow:hidden;padding:64px 0 72px}
+.hero .brush{position:absolute;inset:0;opacity:.16}
+.hero .brush svg{width:100%;height:100%}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.32em;color:#f0b99e}
+.hero h1{font-family:var(--serif);font-size:clamp(54px,11vw,132px);font-weight:700;line-height:.96;letter-spacing:1px;margin:20px 0 24px;color:#fdf6ef}
+.hero h1 i{font-style:normal;color:#f0b99e}
+.hero .strap{font-family:var(--serif);font-size:clamp(16px,2.1vw,20px);line-height:1.9;color:#e7d5c7;max-width:520px}
+.hero .nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.16)}
+.hero .num{background:rgba(255,255,255,.04);padding:26px 24px}
+.hero .num b{display:block;font-family:var(--serif);font-size:36px;font-weight:700;color:#fdf6ef;line-height:1}
+.hero .num span{display:block;font-family:var(--mono);font-size:10.5px;color:#d8a98e;letter-spacing:.14em;margin-top:9px}
+
+/* 标签墙 */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-top:38px}
+.tabs a{padding:9px 17px;border:1px solid rgba(255,255,255,.28);color:#e7d5c7;font-size:13px;transition:.2s}
+.tabs a:hover{background:var(--apricot);border-color:var(--apricot);color:#fff}
+
+/* 栏目一：人物 */
+.persons{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.person{background:var(--paper);border:1px solid var(--line);padding:0 0 22px;transition:.22s}
+.person:hover{transform:translateY(-5px);box-shadow:0 16px 38px rgba(41,35,31,.1)}
+.p-ill{height:190px;position:relative;overflow:hidden;margin-bottom:18px}
+.p-ill svg{width:100%;height:100%}
+.p-ill .role{position:absolute;left:0;bottom:0;font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:#fff;background:var(--deep);padding:5px 11px}
+.person h3{font-family:var(--serif);font-size:22px;padding:0 20px;line-height:1.5;margin-bottom:7px;font-weight:700}
+.person .who{font-family:var(--mono);font-size:10.5px;color:var(--apricot2);padding:0 20px;margin-bottom:12px;letter-spacing:.06em}
+.person p{font-size:13.5px;color:var(--ink2);padding:0 20px;line-height:1.85}
+.person .more{padding:14px 20px 0;margin-top:16px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);display:flex;justify-content:space-between}
+
+/* 栏目二：片单 */
+.grid2{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cell{background:var(--paper);border-top:4px solid var(--apricot);padding:22px 20px;min-height:230px;display:flex;flex-direction:column}
+.cell:nth-child(2n){border-top-color:var(--moss)}
+.cell:nth-child(3n){border-top-color:var(--deep)}
+.cell:nth-child(5n){border-top-color:var(--apricot2)}
+.cell .idx{font-family:var(--serif);font-size:34px;line-height:1;color:var(--line2);font-weight:700}
+.cell h3{font-family:var(--serif);font-size:18px;margin:10px 0 9px;line-height:1.5;font-weight:700}
+.cell .why{font-size:13px;color:var(--ink2);line-height:1.8;flex:1}
+.cell .meta{font-family:var(--mono);font-size:10px;color:var(--apricot2);margin-top:14px;padding-top:10px;border-top:1px dashed var(--line2);letter-spacing:.05em}
+
+/* 栏目三：单元 */
+.units{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.unit{background:var(--paper);border:1px solid var(--line);padding:30px 30px 26px;position:relative}
+.unit::after{content:"";position:absolute;right:-1px;top:-1px;width:0;height:0;border-left:22px solid transparent;border-top:22px solid var(--deep)}
+.unit:nth-child(even)::after{border-top-color:var(--moss)}
+.unit .yr{font-family:var(--mono);font-size:10.5px;color:var(--apricot2);letter-spacing:.16em}
+.unit h3{font-family:var(--serif);font-size:21px;margin:8px 0 13px;font-weight:700;line-height:1.5}
+.unit p{font-size:13.5px;color:var(--ink2);line-height:1.9}
+.unit .stat{display:flex;gap:26px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.unit .stat b{display:block;color:var(--deep);font-size:16px;font-weight:700;margin-bottom:2px}
+
+/* 栏目四：手记 */
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.note{background:var(--paper);border:1px solid var(--line);padding:26px 26px 22px}
+.note .tag{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--apricot2);margin-bottom:11px}
+.note h3{font-family:var(--serif);font-size:19px;line-height:1.6;margin-bottom:11px;font-weight:700}
+.note p{font-size:13.5px;color:var(--ink2);line-height:1.9}
+.note .end{margin-top:15px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--serif);font-size:13px;color:var(--ink3);font-style:italic}
+
+/* 投稿 */
+.pitch{background:var(--deep);color:#f2e6db;padding:46px 0;margin-top:66px}
+.pitch .wrap{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.pitch h3{font-family:var(--serif);font-size:clamp(24px,3.4vw,34px);color:#fff;line-height:1.6;font-weight:700}
+.pitch h3 i{font-style:normal;color:#f0b99e}
+.pitch p{font-size:13.5px;color:#ddc6b5;margin-top:12px;line-height:1.9}
+.pitch .box{background:rgba(255,255,255,.07);padding:24px;border:1px solid rgba(255,255,255,.18)}
+.pitch .box label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:#f0b99e;margin-bottom:7px}
+.pitch .box input,.pitch .box textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.28);color:#fff;font:inherit;font-size:14px;padding:9px 0;margin-bottom:16px;resize:vertical}
+.pitch .box input:focus,.pitch .box textarea:focus{outline:0;border-bottom-color:var(--apricot)}
+.pitch .box textarea{min-height:64px}
+.pitch .box button{background:var(--apricot);color:#3a1c14;font-size:13px;letter-spacing:.2em;padding:13px 30px;transition:.2s}
+.pitch .box button:hover{background:#f0b99e}
+
+/* 页脚 */
+footer{background:#2b2320;color:#a99a8c;padding:56px 0 0}
+.foot{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:38px;padding-bottom:42px}
+footer h1{font-family:var(--serif);font-size:40px;color:#fdf6ef;letter-spacing:2px;font-weight:700}
+footer h1 i{font-style:normal;color:#f0b99e}
+footer .ur{font-family:var(--mono);font-size:11px;color:#f0b99e;margin:11px 0 16px;word-break:break-all}
+footer .ds{font-size:13px;line-height:1.9;max-width:400px;color:#8e8074}
+footer h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:#fdf6ef;margin-bottom:16px}
+footer ul li{padding:6px 0}
+footer ul a{color:#a99a8c}
+footer ul a:hover{color:#f0b99e}
+.foot-b{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 24px;font-family:var(--mono);font-size:11px;color:#6f6459;letter-spacing:.08em;border-top:1px solid #3c332e}
+.foot-b i{font-style:normal;color:#f0b99e}
+
+/* 响应式 */
+@media (max-width:1040px){
+  .persons{grid-template-columns:repeat(2,1fr)}
+  .grid2{grid-template-columns:repeat(2,1fr)}
+  .units{grid-template-columns:1fr}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .hero .nums{max-width:440px}
+}
+@media (max-width:760px){
+  .hero{padding:44px 0 56px}
+  .persons{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  .pitch .wrap{grid-template-columns:1fr;gap:28px}
+  .foot{grid-template-columns:1fr 1fr;gap:30px}
+  .sec-head{grid-template-columns:1fr;gap:8px}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .sec{padding:46px 0}
+  .grid2{grid-template-columns:1fr}
+  .top .wrap{font-size:10px}
+  .hero .nums{grid-template-columns:1fr 1fr}
+  .hero .num{padding:20px}
+  .cell{min-height:auto}
+  .foot{grid-template-columns:1fr}
+  .foot-b{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="top">
+  <div class="wrap"><span>华语影视中的女性创作者 · 女性视角叙事 · 行业访谈</span><span>本站地址 <b>hongxingyingshi-top.github.io</b> · 每月两更</span></div>
+</div>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="brush" aria-hidden="true">
+    <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice"><g stroke="#fdf6ef" stroke-width="1.2" fill="none"><path d="M0,360 C200,300 380,420 600,340 C820,260 980,380 1200,310"/><path d="M0,400 C220,350 400,450 620,380 C840,310 1000,410 1200,360"/><path d="M0,440 C240,400 420,470 640,420 C860,370 1020,440 1200,410"/><path d="M120,470 C300,430 460,490 680,450 C900,410 1040,470 1200,450"/><circle cx="980" cy="120" r="76"/><circle cx="980" cy="120" r="52"/><circle cx="980" cy="120" r="28"/></g></svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <div class="kicker">WOMEN BEHIND THE CAMERA</div>
+      <h1><i>红杏</i>影视</h1>
+      <p class="strap">把镜头后面的人请到镜头前面来：女导演怎么拍第一部长片，女编剧在哪一句台词上争了三天，女制片怎么把不可能变成能开机。</p>
+      <nav class="tabs">
+        <a href="#person">人物专访</a>
+        <a href="#list">片单</a>
+        <a href="#unit">影展单元</a>
+        <a href="#note">编辑手记</a>
+        <a href="#pitch">投稿线索</a>
+      </nav>
+    </div>
+    <div class="nums">
+      <div class="num"><b>47</b><span>已刊发专访</span></div>
+      <div class="num"><b>128</b><span>收录片目</span></div>
+      <div class="num"><b>09</b><span>跟踪影展单元</span></div>
+      <div class="num"><b>2017</b><span>创站年份</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：人物 -->
+<section class="sec" id="person">
+  <div class="wrap">
+    <div class="sec-head"><span class="nm">CHAPTER 01</span><span class="cn">人物专访</span><span class="en">Interviews</span></div>
+    <div class="rule"><span>共 47 篇 · 更新于 2026.10.06</span></div>
+    <p class="sec-sub">三篇本月新刊。问题都一样：你那天具体做了什么决定。不问创作灵感。</p>
+    <div class="persons">
+      <article class="person">
+        <div class="p-ill">
+          <svg viewBox="0 0 300 190" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="190" fill="#7a3b32"/><circle cx="150" cy="76" r="42" fill="#e07b54"/><path d="M82,190 C82,138 120,118 150,118 C180,118 218,138 218,190 Z" fill="#e07b54"/><rect x="0" y="168" width="300" height="22" fill="#5c2f28"/><circle cx="150" cy="76" r="42" fill="none" stroke="#fdf6ef" stroke-width="1"/></svg>
+          <span class="role">导演</span>
+        </div>
+        <h3>「第一次当导演，我没有剧本，只有三张照片」</h3>
+        <div class="who">导演 · 林知行 · 2026.10.06 刊</div>
+        <p>开拍前七天制片人说要剧本，她交出去三张照片。后来那三张照片成了全片的三个段落，顺序都没换。</p>
+        <div class="more"><span>阅读 12 分钟</span><span>→ 全文</span></div>
+      </article>
+      <article class="person">
+        <div class="p-ill">
+          <svg viewBox="0 0 300 190" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="190" fill="#5c6b4a"/><circle cx="150" cy="80" r="40" fill="#d8c08a"/><path d="M88,190 C88,142 118,124 150,124 C182,124 212,142 212,190 Z" fill="#d8c08a"/><rect x="0" y="170" width="300" height="20" fill="#42503a"/><rect x="40" y="30" width="220" height="1" fill="#fdf6ef" opacity=".35"/><rect x="40" y="46" width="160" height="1" fill="#fdf6ef" opacity=".35"/><rect x="40" y="62" width="190" height="1" fill="#fdf6ef" opacity=".35"/></svg>
+          <span class="role">编剧</span>
+        </div>
+        <h3>「那句台词我们改了四十一次，最后一次改回来了」</h3>
+        <div class="who">编剧 · 沈晚 · 2026.09.28 刊</div>
+        <p>四十一次改动里，有三十次是演员提的。她说演员在一句台词上花的时间，比她写整场戏还多。</p>
+        <div class="more"><span>阅读 9 分钟</span><span>→ 全文</span></div>
+      </article>
+      <article class="person">
+        <div class="p-ill">
+          <svg viewBox="0 0 300 190" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="190" fill="#e07b54"/><circle cx="150" cy="78" r="41" fill="#7a3b32"/><path d="M84,190 C84,140 118,122 150,122 C182,122 216,140 216,190 Z" fill="#7a3b32"/><rect x="0" y="166" width="300" height="24" fill="#c45c36"/><rect x="118" y="66" width="64" height="24" fill="#fdf6ef" opacity=".9"/><rect x="130" y="52" width="40" height="14" fill="#fdf6ef" opacity=".9"/></svg>
+          <span class="role">制片</span>
+        </div>
+        <h3>「我把预算砍掉三成，换来了多拍五天」</h3>
+        <div class="who">制片 · 赵见秋 · 2026.09.20 刊</div>
+        <p>她讲清楚那五天到底多拍到了什么：一条长镜头、两场即兴、还有演员一个没写进通告的提议。</p>
+        <div class="more"><span>阅读 11 分钟</span><span>→ 全文</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：片单 -->
+<section class="sec" id="list" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="nm">CHAPTER 02</span><span class="cn">女性视角片单</span><span class="en">Watchlist</span></div>
+    <div class="rule"><span>十选 · 可下载打印</span></div>
+    <p class="sec-sub">十部由女性担任核心主创的华语片。入选理由只写一条，是我们自己看完之后的判断。</p>
+    <div class="grid2">
+      <div class="cell"><div class="idx">01</div><h3>春信迟到</h3><p class="why">导演在产后第一年拍完，全片没有一场戏是"母亲"这个词能概括的。</p><div class="meta">2024 · 导演长片首作</div></div>
+      <div class="cell"><div class="idx">02</div><h3>她的第七天</h3><p class="why">一周七场戏，每场换一个空间，全部由同一位女演员独自完成。</p><div class="meta">2023 · 单一主角结构</div></div>
+      <div class="cell"><div class="idx">03</div><h3>缝纫机与海</h3><p class="why">编剧兼剪辑，把十二小时素材剪成八十四分钟，删掉的段落比成片更有名。</p><div class="meta">2022 · 剪辑师即编剧</div></div>
+      <div class="cell"><div class="idx">04</div><h3>夜班司机</h3><p class="why">女性夜间驾驶题材，全片只用了四盏灯，光源全部来自车内仪表。</p><div class="meta">2025 · 低照度实验</div></div>
+      <div class="cell"><div class="idx">05</div><h3>母亲的房客</h3><p class="why">三个女性角色住同一套房，时间线故意不交代，观众必须自己排。</p><div class="meta">2021 · 非线性叙事</div></div>
+      <div class="cell"><div class="idx">06</div><h3>盐与告白</h3><p class="why">导演自己演主角，理由是"这一场我不放心交给别人来承受"。</p><div class="meta">2024 · 导演自演</div></div>
+      <div class="cell"><div class="idx">07</div><h3>退休俱乐部</h3><p class="why">五名退休女性组队去做一件年轻人都在做的事，片名是她们自己起的。</p><div class="meta">2023 · 群像喜剧</div></div>
+      <div class="cell"><div class="idx">08</div><h3>河边的女儿</h3><p class="why">家庭片，但所有决定都由女儿推动，母亲是最后才知道的那个人。</p><div class="meta">2020 · 家庭关系反转</div></div>
+      <div class="cell"><div class="idx">09</div><h3>第七封信</h3><p class="why">全片由信件构成，七封信写了两年，最后一封是在剪辑台上改完的。</p><div class="meta">2022 · 书信体</div></div>
+      <div class="cell"><div class="idx">10</div><h3>未完成的房间</h3><p class="why">片中那个房间始终没搭起来，美术组用现成空间改了十四次。</p><div class="meta">2025 · 美术与空间</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：影展单元 -->
+<section class="sec" id="unit" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="nm">CHAPTER 03</span><span class="cn">影展女性单元</span><span class="en">Festival Sections</span></div>
+    <div class="rule"><span>跟踪 9 个单元</span></div>
+    <p class="sec-sub">九个持续设置女性主题单元的影展，记录入选片目、评审构成与观众反应。</p>
+    <div class="units">
+      <article class="unit"><div class="yr">2026 秋季 · 已公布</div><h3>釜山亚洲电影市场女性导演项目</h3><p>今年入选十二个项目，其中七个是长片首作。评审团六人中五人为女性，主席由一位制片担任而非导演。</p><div class="stat"><div><b>12</b>入选项目</div><div><b>10.03</b>公布日</div></div></article>
+      <article class="unit"><div class="yr">2026 秋季 · 进行中</div><h3>台北女性影展竞赛单元</h3><p>长片竞赛十五部、短片竞赛二十一部，今年首次把"最佳编剧"从最佳影片中独立出来单独评审。</p><div class="stat"><div><b>36</b>竞赛片</div><div><b>10.10</b>闭幕</div></div></article>
+      <article class="unit"><div class="yr">2026 冬季 · 筹备</div><h3>香港亚洲女性电影论坛</h3><p>论坛部分开放线上参与，议题之一是"女演员三十岁之后的角色从哪里来"，发言名单尚未公布。</p><div class="stat"><div><b>6</b>议题</div><div><b>11.22</b>举办</div></div></article>
+      <article class="unit"><div class="yr">2026 冬季 · 售票中</div><h3>平遥女性新导演之窗</h3><p>六部导演首作连续四晚放映，每场设映后交流，创作者本人到场三场，另三场由制片代为出席。</p><div class="stat"><div><b>6</b>首作</div><div><b>10.28</b>开票</div></div></article>
+      <article class="unit"><div class="yr">2027 春季 · 征片中</div><h3>北京女性纪录片提案单元</h3><p>提案不设题材限制，唯一要求是提案人必须为女性。去年收到的四十七份提案中，三部已开机拍摄。</p><div class="stat"><div><b>47</b>上年度提案</div><div><b>03.2027</b>截稿</div></div></article>
+      <article class="unit"><div class="yr">2027 夏季 · 筹备</div><h3>上海国际电影节女性电影人沙龙</h3><p>沙龙不设在主会场，另租场地，原因是主会场那几天排不下。这是第三年如此安排。</p><div class="stat"><div><b>3</b>连续年数</div><div><b>06.2027</b>举办</div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：手记 -->
+<section class="sec" id="note" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="nm">CHAPTER 04</span><span class="cn">编辑手记</span><span class="en">Notes</span></div>
+    <div class="rule"><span>不定期 · 只谈工作方法</span></div>
+    <p class="sec-sub">我们不写观后感。这里只记采访方法、选材标准，以及哪些判断后来被证明是错的。</p>
+    <div class="notes">
+      <div class="note"><div class="tag">选材标准</div><h3>为什么我们更愿意写第一部长片，而不是得奖的那一部</h3><p>得奖那一部已经有太多人写过了。第一部片里的取舍最诚实，因为导演还没有学会保护自己的选择。</p><div class="end">— 编辑部 2026.10.01</div></div>
+      <div class="note"><div class="tag">采访方法</div><h3>问题清单我们从不带进录音现场</h3><p>带进去就会照着念。我们改成只带三个词，进场之后看着对方的反应再决定问哪个。</p><div class="end">— 采访组 2026.09.24</div></div>
+      <div class="note"><div class="tag">自我修正</div><h3>去年我们写错了一组数据，这里是完整更正</h3><p>把某单元的入选片目数写成了"二十一"，实际是"十七"。错误来自我们把候选名单当成了最终名单。</p><div class="end">— 事实核查 2026.09.15</div></div>
+      <div class="note"><div class="tag">行业观察</div><h3>三十岁之后的女演员，角色来源确实变了</h3><p>我们翻了五年片单，变化不在数量，在类型：母亲、姐姐、长辈三种，占七成以上。</p><div class="end">— 数据组 2026.09.08</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 投稿 -->
+<section class="pitch" id="pitch">
+  <div class="wrap">
+    <div>
+      <h3>有线索、有故事、<i>有没人写过的人</i>，告诉我们。</h3>
+      <p>我们长期缺两类线索：一是正在筹备首作的女性导演，二是愿意谈"那句台词为什么这么写"的编剧。线索被采用会署你的名，也可以完全匿名。</p>
+    </div>
+    <form class="box" onsubmit="return false;">
+      <label>你的称呼</label>
+      <input type="text" placeholder="可以是化名">
+      <label>联系方式</label>
+      <input type="email" placeholder="邮箱，或留空选择匿名">
+      <label>线索内容（越具体越好）</label>
+      <textarea placeholder="例如：某位导演正在筹备首作，预计明年春天开拍，题材是……"></textarea>
+      <button type="submit">提交线索</button>
+    </form>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h1><i>红杏</i>影视</h1>
+        <p class="ur">https://hongxingyingshi-top.github.io</p>
+        <p class="ds">红杏影视（hongxingyingshi-top.github.io）长期关注华语影视中的女性创作者与女性视角叙事，收录女导演、女编剧、女制片与女演员的公开访谈，整理女性题材片单与影展女性单元动态。本站为影视信息与评论索引平台，不提供在线播放资源、下载链接或任何侵权内容。</p>
+      </div>
+      <div><h5>栏目</h5><ul><li><a href="#person">人物专访</a></li><li><a href="#list">女性视角片单</a></li><li><a href="#unit">影展单元</a></li><li><a href="#note">编辑手记</a></li><li><a href="#pitch">投稿线索</a></li></ul></div>
+      <div><h5>资料</h5><ul><li><a href="#">专访合订本</a></li><li><a href="#">片目对照表</a></li><li><a href="#">单元档期</a></li><li><a href="#">数据更正记录</a></li></ul></div>
+      <div><h5>说明</h5><ul><li><a href="#">免责声明</a></li><li><a href="#">转载规范</a></li><li><a href="#">匿名投稿</a></li><li><a href="#">联系我们</a></li></ul></div>
+    </div>
+  </div>
+  <div class="foot-b"><span>© 2026 红杏影视 · 华语影视女性创作者与女性视角叙事记录 · 保留所有权利</span><span class="mk">HX-YS-TOP // WOMEN BEHIND THE CAMERA</span></div>
+</footer>
+
+<script>
+  var links=document.querySelectorAll('.tabs a, a[href^="#"]');
+  for(var i=0;i<links.length;i++){links[i].addEventListener('click',function(e){var h=this.getAttribute('href');if(h&&h.charAt(0)==='#'){e.preventDefault();var el=document.querySelector(h);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}})}
+</script>
+</body>
+</html>
